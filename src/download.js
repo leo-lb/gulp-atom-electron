@@ -40,7 +40,7 @@ function cache(assetName, repo, onMiss, cb) {
 }
 
 function download(opts, cb) {
-	var repo = opts.repo || 'atom/electron';
+	var repo = opts.repo || 'leo-lb/electron';
 	var github = new GitHub({ repo: repo, token: opts.token });
 
 	if (!opts.version) {
